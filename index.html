@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <title>Skilltensive Avia_Ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app">
+      <!--Первая форма-->
+      <div class="js-frst js-thrd container is-active">
+        <img class="icon" src="icon1.svg" alt="picture" title="picture">
+        <div class="heading">
+          Онлайн регистрация на рейс
+        </div>
+        <form id="ticket" action="onsubmit" class="content">
+          <label class="label1">
+          <div class="label-text">
+            Номер билета
+          </div>
+          <input id="inputTicket" class="input1" type="text" placeholder="Введите номер билета">
+          </label>
+          <button  class="button">
+            Отправить
+          </button>
+        </form>
+      </div>
+
+      <!--Форма с кодом-->
+      <div class="js-frst js-scnd container">
+        <img class="icon" src="icon2.svg" alt="picture" title="picture">
+        <div class="heading">
+          Онлайн регистрация на рейс
+        </div>
+        <form id="code" action="onsubmit" class="content">
+          <label class="label1">
+          <div class="label-text">
+            Проверочный код
+          </div>
+          <input id="inputCode" class="input1" type="text" placeholder="Введите код">
+          </label>
+          <button  class="button">
+            Отправить
+          </button>
+        </form>
+      </div>
+
+      <!--Финальная форма-->
+      <div class="js-thrd js-scnd container">
+        <img class="icon" src="icon3.svg" alt="picture" title="picture">
+        <div class="heading is-final">
+          Вы успешно зарегистрированы на рейс!
+        </div>
+
+        <div class="final">
+          <div class="thx">
+            Благодарим за использование Skillbox Avia!
+          </div>
+
+          <button id="resetApp" class="button is-final">
+           Еще регистрация
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
